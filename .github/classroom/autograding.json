@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Part 1",
+      "setup": "cmake .;make Part1",
+      "run": "timeout 1m ./Part1",
+      "input": "5 10 6 1 3 2 4 3 5 4 6 5 7 6 8",
+      "output": "Welcome to part 1 of Prof. Erickson's Struct Sandbox!\nSample code: \nInitializing ExamplePoint to (1,2): \n(1, 2)\nEnter a new x value for ExamplePoint: \nEnter a new y value for ExamplePoint: \n(5, 10)\nInitializing square's vertexCoordinates[4] to zero: \nThe values in the square Polygon struct are: \n(0, 0)\n(0, 0)\n(0, 0)\n(0, 0)\nEnd of sample code.  Part 1 begins here.\n\nPart 1: Initializing an unknown Polygon struct.\nHow many sides does the unknown polygon have?\nEnter the next x coordinate:\nEnter the next y coordinate:\nEnter the next x coordinate:\nEnter the next y coordinate:\nEnter the next x coordinate:\nEnter the next y coordinate:\nEnter the next x coordinate:\nEnter the next y coordinate:\nEnter the next x coordinate:\nEnter the next y coordinate:\nEnter the next x coordinate:\nEnter the next y coordinate:\nThe values in the unknown Polygon struct are: \n(1, 3)\n(2, 4)\n(3, 5)\n(4, 6)\n(5, 7)\n(6, 8)",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "Part 2",
+      "setup": "cmake .;make Part2",
+      "run": "timeout 1m ./Part2",
+      "input": "4 5 2",
+      "output": "Welcome to Part 2 of Prof. Erickson's Struct Sandbox.\nHere we will use a struct and dynamic array to create a Matrix-like data type.\nDeclaring an instance of the matrix struct named testMatrix with 2 rows and 2 columns and\n initializing all of its elements to zero: \n0\t0\t\n0\t0\t\n1\t2\t\n3\t4\t\n\nEnd of sample code.  Part 2 of sandbox begins here.\nPart 2:\nHow many rows does your matrix have?\nHow many columns does your matrix have?\nWhat value should we initialize all of the data to?\n2\t2\t2\t2\t2\t\n2\t2\t2\t2\t2\t\n2\t2\t2\t2\t2\t\n2\t2\t2\t2\t2\t",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "Default constructor - 1 point",
+      "setup": "cmake .;make Constructor_Tests",
+      "run": "timeout 5m ./Constructor_Tests \"Constructor_Tests\" -c \"Default constructor - 1 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Good Values, Box(length, width, height) - 1 point",
+      "setup": "cmake .;make Constructor_Tests",
+      "run": "timeout 5m ./Constructor_Tests \"Constructor_Tests\" -c \"Good Values, Box(length, width, height) - 1 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Bad Values, Box(length, width, height) - 1 point",
+      "setup": "cmake .;make Constructor_Tests",
+      "run": "timeout 5m ./Constructor_Tests \"Constructor_Tests\" -c \"Bad Values, Box(length, width, height) - 1 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Testing Volume - 1 Point",
+      "setup": "cmake .;make Volume_Area_Tests",
+      "run": "timeout 5m ./Volume_Area_Tests \"Volume_Area_Tests\" -c \"Testing Volume - 1 Point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Testing Surface Area - 1 Point",
+      "setup": "cmake .;make Volume_Area_Tests",
+      "run": "timeout 5m ./Volume_Area_Tests \"Volume_Area_Tests\" -c \"Testing Surface Area - 1 Point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Testing Getters/Setters - 1 point",
+      "setup": "cmake .;make Getters_Setters_Tests",
+      "run": "timeout 5m ./Getters_Setters_Tests \"Getters_Setters_Tests\" -c \"Testing Getters/Setters - 2 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Testing Setters, Bad Values - 1 point",
+      "setup": "cmake .;make Getters_Setters_Tests",
+      "run": "timeout 5m ./Getters_Setters_Tests \"Getters_Setters_Tests\" -c \"Testing Setters, Bad Values - 1 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "Testing Resize - 1 point",
+      "setup": "cmake .;make Getters_Setters_Tests",
+      "run": "timeout 5m ./Getters_Setters_Tests \"Getters_Setters_Tests\" -c \"Testing Resize - 1 point\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 2
+    }
+  ]
+}
