@@ -88,8 +88,24 @@ int main()
      */
 
     //write your code for part2 here
+    inputMatrix.numRows = numberOfRows;
+    inputMatrix.numCols = numberOfCols;
+    inputMatrix.values = new int*[inputMatrix.numCols];
 
+    for (int col = 0; col < inputMatrix.numCols; col++)
+    {
+        inputMatrix.values[col] = new int[inputMatrix.numRows];
+    }
 
+    for (int row = 0; row < inputMatrix.numRows; row++)
+    {
+        for(int col = 0; col < inputMatrix.numCols; col++)
+        {
+            inputMatrix.values[col][row] = arrayValue;
+            cout << inputMatrix.values[col][row] << "\t";
+        }
+        cout << endl;
+    }
 
 
     return 0;
