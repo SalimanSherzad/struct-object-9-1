@@ -88,8 +88,24 @@ int main() {
      When finished entering values, output all the coordinates to the screen.*/
 
     //Add your code for part 1 here.
+    unknown.numSides = numberOfSides;
+    unknown.vertexCoordinates = new XYPoint[unknown.numSides];
+    for (int i = 0; i < unknown.numSides; i++) {
+        int xcor;
+        int ycor;
+        cout << "Enter the next x coordinate:\n";
+        cin >> xcor;
+        cout << "Enter the next y coordinate:\n";
+        cin >> ycor;
+        unknown.vertexCoordinates[i].xCoord = xcor;
 
-
+        unknown.vertexCoordinates[i].yCoord = ycor;
+    }
+    cout << "The values in the unknown Polygon struct are: " << endl;
+    for (int i = 0; i < unknown.numSides; i++) {
+        outputDataPoint(unknown.vertexCoordinates[i]);  //output data point
+        cout << endl;  //output data points separated by newline
+    }
 
 
     return 0;
